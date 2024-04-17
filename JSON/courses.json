@@ -1,0 +1,250 @@
+[
+    {
+        "id": "3f80182d-07ce-45bf-8424-f1c4a4b2c0db",
+        "available_places_for_make_up_online": 4,
+        "available_places_for_make_up_on_site": 3,
+        "can_be_used_as_online_make_up_for_other_schools": false,
+        "classroom": 14,
+        "course": "Frontend",
+        "course_type": "onl",
+        "day": "miercuri",
+        "default_trainer": "a730d580-b2fd-4ee3-aec8-5c59a468c20e",
+        "default_trainer_first_name": "Elizabeth",
+        "default_trainer_last_name": "Bell",
+        "first_day_of_session": "2024-03-29",
+        "group_name": "few",
+        "last_day_of_session": "2024-05-28",
+        "online_link": "http://morton-bryan.org/",
+        "school": "2593bc0b-4393-4c23-9960-d267b1241d1f",
+        "students": [
+            {
+                "id": "b7b72b0e-6906-46e8-933c-2e8933395502",
+                "first_name": "Darrell",
+                "last_name": "Roberts",
+                "parent": "fc0c29f5-617b-46fe-b7a4-d843ed8e7f07"
+            },
+            {
+                "id": "30fba402-6e19-40b8-ae78-59838c2395d2",
+                "first_name": "Olivia",
+                "last_name": "Wong",
+                "parent": "b419b424-1958-4ac5-9954-0c6dca4b708d"
+            },
+            {
+                "id": "943efa22-41b8-471d-84ee-8ef79ffe4902",
+                "first_name": "Michael",
+                "last_name": "Williams",
+                "parent": "9653b71b-cf80-4e7c-9eb6-4fd601f823a0"
+            },
+            {
+                "id": "3a4e21b6-7eca-4844-87df-0bf4f714a9c6",
+                "first_name": "Manuel",
+                "last_name": "Harris",
+                "parent": "9653b71b-cf80-4e7c-9eb6-4fd601f823a0"
+            },
+            {
+                "id": "d34b7e45-7ac7-4508-9de3-615576d931a3",
+                "first_name": "John",
+                "last_name": "Martinez",
+                "parent": "d458c3bb-4fb9-4ed3-b1e8-c873c4486e0e"
+            },
+            {
+                "id": "42c99887-2111-4ed1-b716-330862b578f8",
+                "first_name": "Erica",
+                "last_name": "Hunter",
+                "parent": "087ac5b4-8360-4751-85b5-5be3b09bbd39"
+            }
+        ],
+        "start_time": "16:33:28",
+        "total_sessions": 7,
+        "current_session": 5
+    },
+    {
+        "id": "86a96c43-7670-416f-be48-95892d1b7dad",
+        "available_places_for_make_up_online": 3,
+        "available_places_for_make_up_on_site": 2,
+        "can_be_used_as_online_make_up_for_other_schools": true,
+        "classroom": 11,
+        "course": "Python",
+        "course_type": "hbr",
+        "day": "duminica",
+        "default_trainer": "754cd8a1-be02-4c5d-846e-ae32595576fc",
+        "default_trainer_first_name": "Gregory",
+        "default_trainer_last_name": "Torres",
+        "first_day_of_session": "2024-03-14",
+        "group_name": "radio",
+        "last_day_of_session": "2024-05-29",
+        "online_link": "http://www.watts-baker.org/",
+        "school": "2593bc0b-4393-4c23-9960-d267b1241d1f",
+        "students": [
+            {
+                "id": "b7b72b0e-6906-46e8-933c-2e8933395502",
+                "first_name": "Darrell",
+                "last_name": "Roberts",
+                "parent": "fc0c29f5-617b-46fe-b7a4-d843ed8e7f07"
+            },
+            {
+                "id": "df255a74-0fce-4f33-aefa-7c9361fdcbc9",
+                "first_name": "Paul",
+                "last_name": "Goodman",
+                "parent": "fc0c29f5-617b-46fe-b7a4-d843ed8e7f07"
+            },
+            {
+                "id": "5c064557-453c-4355-ba5d-bb4318606379",
+                "first_name": "Nicole",
+                "last_name": "Wade",
+                "parent": "b419b424-1958-4ac5-9954-0c6dca4b708d"
+            },
+            {
+                "id": "943efa22-41b8-471d-84ee-8ef79ffe4902",
+                "first_name": "Michael",
+                "last_name": "Williams",
+                "parent": "9653b71b-cf80-4e7c-9eb6-4fd601f823a0"
+            },
+            {
+                "id": "436a361a-38b1-46b7-8658-7503b830d017",
+                "first_name": "Keith",
+                "last_name": "Douglas",
+                "parent": "d458c3bb-4fb9-4ed3-b1e8-c873c4486e0e"
+            },
+            {
+                "id": "d34b7e45-7ac7-4508-9de3-615576d931a3",
+                "first_name": "John",
+                "last_name": "Martinez",
+                "parent": "d458c3bb-4fb9-4ed3-b1e8-c873c4486e0e"
+            },
+            {
+                "id": "8f52c70c-030e-43d7-9fb4-4a3acb4715a0",
+                "first_name": "Scott",
+                "last_name": "Brown",
+                "parent": "087ac5b4-8360-4751-85b5-5be3b09bbd39"
+            },
+            {
+                "id": "42c99887-2111-4ed1-b716-330862b578f8",
+                "first_name": "Erica",
+                "last_name": "Hunter",
+                "parent": "087ac5b4-8360-4751-85b5-5be3b09bbd39"
+            }
+        ],
+        "start_time": "02:49:24",
+        "total_sessions": 9,
+        "current_session": 4
+    },
+    {
+        "id": "3f80182d-07ce-45bf-8424-f1c4a4b2c0db",
+        "available_places_for_make_up_online": 4,
+        "available_places_for_make_up_on_site": 3,
+        "can_be_used_as_online_make_up_for_other_schools": false,
+        "classroom": 14,
+        "course": "Frontend",
+        "course_type": "onl",
+        "day": "miercuri",
+        "default_trainer": "a730d580-b2fd-4ee3-aec8-5c59a468c20e",
+        "default_trainer_first_name": "Elizabeth",
+        "default_trainer_last_name": "Bell",
+        "first_day_of_session": "2024-03-29",
+        "group_name": "few",
+        "last_day_of_session": "2024-05-28",
+        "online_link": "http://morton-bryan.org/",
+        "school": "2593bc0b-4393-4c23-9960-d267b1241d1f",
+        "students": [
+            {
+                "id": "b7b72b0e-6906-46e8-933c-2e8933395502",
+                "first_name": "Darrell",
+                "last_name": "Roberts",
+                "parent": "fc0c29f5-617b-46fe-b7a4-d843ed8e7f07"
+            },
+            {
+                "id": "30fba402-6e19-40b8-ae78-59838c2395d2",
+                "first_name": "Olivia",
+                "last_name": "Wong",
+                "parent": "b419b424-1958-4ac5-9954-0c6dca4b708d"
+            },
+            {
+                "id": "943efa22-41b8-471d-84ee-8ef79ffe4902",
+                "first_name": "Michael",
+                "last_name": "Williams",
+                "parent": "9653b71b-cf80-4e7c-9eb6-4fd601f823a0"
+            },
+            {
+                "id": "3a4e21b6-7eca-4844-87df-0bf4f714a9c6",
+                "first_name": "Manuel",
+                "last_name": "Harris",
+                "parent": "9653b71b-cf80-4e7c-9eb6-4fd601f823a0"
+            },
+            {
+                "id": "d34b7e45-7ac7-4508-9de3-615576d931a3",
+                "first_name": "John",
+                "last_name": "Martinez",
+                "parent": "d458c3bb-4fb9-4ed3-b1e8-c873c4486e0e"
+            },
+            {
+                "id": "42c99887-2111-4ed1-b716-330862b578f8",
+                "first_name": "Erica",
+                "last_name": "Hunter",
+                "parent": "087ac5b4-8360-4751-85b5-5be3b09bbd39"
+            }
+        ],
+        "start_time": "16:33:28",
+        "total_sessions": 7,
+        "current_session": 4
+    },
+    {
+        "id": "3f80182d-07ce-45bf-8424-f1c4a4b2c0db",
+        "available_places_for_make_up_online": 4,
+        "available_places_for_make_up_on_site": 3,
+        "can_be_used_as_online_make_up_for_other_schools": false,
+        "classroom": 14,
+        "course": "Frontend",
+        "course_type": "onl",
+        "day": "miercuri",
+        "default_trainer": "a730d580-b2fd-4ee3-aec8-5c59a468c20e",
+        "default_trainer_first_name": "Elizabeth",
+        "default_trainer_last_name": "Bell",
+        "first_day_of_session": "2024-03-29",
+        "group_name": "few",
+        "last_day_of_session": "2024-05-28",
+        "online_link": "http://morton-bryan.org/",
+        "school": "2593bc0b-4393-4c23-9960-d267b1241d1f",
+        "students": [
+            {
+                "id": "b7b72b0e-6906-46e8-933c-2e8933395502",
+                "first_name": "Darrell",
+                "last_name": "Roberts",
+                "parent": "fc0c29f5-617b-46fe-b7a4-d843ed8e7f07"
+            },
+            {
+                "id": "30fba402-6e19-40b8-ae78-59838c2395d2",
+                "first_name": "Olivia",
+                "last_name": "Wong",
+                "parent": "b419b424-1958-4ac5-9954-0c6dca4b708d"
+            },
+            {
+                "id": "943efa22-41b8-471d-84ee-8ef79ffe4902",
+                "first_name": "Michael",
+                "last_name": "Williams",
+                "parent": "9653b71b-cf80-4e7c-9eb6-4fd601f823a0"
+            },
+            {
+                "id": "3a4e21b6-7eca-4844-87df-0bf4f714a9c6",
+                "first_name": "Manuel",
+                "last_name": "Harris",
+                "parent": "9653b71b-cf80-4e7c-9eb6-4fd601f823a0"
+            },
+            {
+                "id": "d34b7e45-7ac7-4508-9de3-615576d931a3",
+                "first_name": "John",
+                "last_name": "Martinez",
+                "parent": "d458c3bb-4fb9-4ed3-b1e8-c873c4486e0e"
+            },
+            {
+                "id": "42c99887-2111-4ed1-b716-330862b578f8",
+                "first_name": "Erica",
+                "last_name": "Hunter",
+                "parent": "087ac5b4-8360-4751-85b5-5be3b09bbd39"
+            }
+        ],
+        "start_time": "16:33:28",
+        "total_sessions": 7,
+        "current_session": 3
+    }
+]

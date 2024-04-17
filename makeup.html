@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makeup</title>
+    <link rel="stylesheet" href="./bootstrap/css/custom.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="makeup.js" type="module"></script>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+
+    <!-- TABLE -->
+    <div class="container mt-5 pt-4">
+      <div class="table-container"></div>
+    </div>
+    <!-- POPUP -->
+    <div
+      class="modal fade"
+      id="reschedule"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="max-width: 900px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Reschedule the session
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="text-primary mb-3">Session type</h4>
+            <div class="radioContainer d-flex justify-content-center mb-3">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input reschedule-radio"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="onl"
+                  value="onl"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >Online</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input reschedule-radio"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="sed"
+                  value="sed"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >School</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input reschedule-radio"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="any"
+                  value="any"
+                />
+                <label class="form-check-label" for="inlineRadio3">Any</label>
+              </div>
+            </div>
+
+            <div class="available-container row">
+              <div class="col">
+                <h5 class="text-info mx-1">Courses</h2>
+                <div class="available-subcontainer border border-info rounded m-1 text-info courses-container"></div>
+              </div>
+            <div class="col">
+              <h5 class="text-secondary mx-1">Make-ups</h2>
+              <div class="available-subcontainer col border border-secondary rounded m-1 text-secondary makeups-container"></div>
+            </div>
+            <div class="col">
+              <h5 class="text-primary mx-1">30 mins</h2>
+              <div class="available-subcontainer col border border-primary rounded m-1 text-primary 30mins-container"></div>
+            </div>
+
+
+            </div>
+          </div>
+          <div class="reschedule-container"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary text-white save-reschedule"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

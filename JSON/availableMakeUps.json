@@ -1,0 +1,80 @@
+{
+    "onl": {
+        "courses": [],
+        "make_ups": [],
+        "30_mins": []
+    },
+    "sed": {
+        "courses": [
+            {
+                "id": "469b1a4c-7f61-4baf-81b6-47535c75a5e3",
+                "course_session__id": "b1194fae-61ab-4ded-b1e6-ef0a175ff1ae",
+                "session_no": 3,
+                "session_trainer": null,
+                "date": "2024-05-22",
+                "course_session__start_time": "02:49:24",
+                "course_session__school__name": "Barnett, Glover and Ross",
+                "course_session__online_link": "http://www.watts-baker.org/",
+                "course_session__available_places_for_make_up_online": 3,
+                "course_session__available_places_for_make_up_on_site": 2
+            },
+            {
+                "id": "469b1a4c-7f61-4baf-81b6-47535c75a5e4",
+                "course_session__id": "b1194fae-61ab-4ded-b1e6-ef0a175ff1ae",
+                "session_no": 3,
+                "session_trainer": null,
+                "date": "2024-05-25",
+                "course_session__start_time": "03:49:24",
+                "course_session__school__name": "Barnett, Glover and Ross",
+                "course_session__online_link": "http://www.watts-baker.org/",
+                "course_session__available_places_for_make_up_online": 3,
+                "course_session__available_places_for_make_up_on_site": 5
+            }
+        ],
+        "make_ups": [
+            {
+                "id": "c1280089-e60e-40ec-904e-0e0a47660640",
+                "session__id": "469b1a4c-7f61-4baf-81b6-47535c75a5e3",
+                "session__session_no": 3,
+                "trainer": null,
+                "date_time": "2024-05-22T00:00:00.040347Z",
+                "session__course_session__school__name": "Barnett, Glover and Ross",
+                "online_link": "https://www.ray-james.org/"
+            },
+            {
+                "id": "96974d8e-9cb9-4a76-bf4e-3c256b75a2a1",
+                "session__id": "469b1a4c-7f61-4baf-81b6-47535c75a5e3",
+                "session__session_no": 3,
+                "trainer": null,
+                "date_time": "2024-05-22T00:00:00.316724Z",
+                "session__course_session__school__name": "Barnett, Glover and Ross",
+                "online_link": "http://www.hartman.com/"
+            },
+            {
+                "id": "306ab30d-9567-4c52-b0c8-0a1d81c8604d",
+                "session__id": "469b1a4c-7f61-4baf-81b6-47535c75a5e3",
+                "session__session_no": 3,
+                "trainer": null,
+                "date_time": "2024-05-22T00:00:00.224574Z",
+                "session__course_session__school__name": "Barnett, Glover and Ross",
+                "online_link": "https://www.mcneil.com/"
+            }
+        ],
+        "30_mins": {
+            "make_up_possible_before_session": {
+                "status": false,
+                "trainers": {},
+                "date": "2024-05-01",
+                "start": "18:56:43",
+                "end": "19:26:43"
+            },
+            "make_up_possible_after_session": {
+                "status": false,
+                "trainers": {},
+                "date": "2024-05-01",
+                "start": "20:56:43",
+                "end": "21:26:43"
+            }
+        }
+    }
+}
