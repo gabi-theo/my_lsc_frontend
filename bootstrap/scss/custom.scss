@@ -3,7 +3,9 @@ $theme-colors: (
     "secondary":#c4d601,
     "info":#a50050,
     "dark":#003b64,
-    "success":#28a745
+    "success":#28a745,
+    "danger":#dc3545,
+    "warning":#ffc107
 );
 
 @import "../bootstrap-5.3.3/scss/bootstrap";

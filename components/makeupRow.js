@@ -19,7 +19,7 @@ const row = (
     statusColor = "bg-info";
     rescheduleButton = `
     <button
-            class="btn p-0 text-white bg-primary px-1 mx-2 reschedule-button"
+            class="btn p-0 btn-primary text-white px-1 mx-3 reschedule-button"
             data-bs-toggle="modal"
             data-bs-target="#reschedule"
           >
@@ -31,24 +31,24 @@ const row = (
   const row = document.createElement("div");
   row.innerHTML = `
     <div id=${sessionID}
-          class="subcontainer bg-body-tertiary p-2 m-2 border rounded d-flex"
+          class="subcontainer bg-body-tertiary p-2 m-2 border rounded d-flex flex-column flex-lg-row"
         >
           <div
-            class="date border rounded bg-body-secondary mx-3 px-3 d-flex align-items-center"
+            class="date mx-lg-3 m-3 p-lg-0 p-3 px-lg-3 d-flex align-items-center my-1"
           >
-            <span>Session <b class="text-primary" id="session">${session}/${totalSessions}</b> from <b class="text-primary">${date}</b></span>
+            <span>Session <b class="text-primary" id="session">${session}/${totalSessions}</b> from <b class="text-primary sessionDate">${date}</b></span>
           </div>
           <div
-            class="course border rounded bg-body-secondary mx-3 px-3 d-flex align-items-center"
+            class="course border rounded bg-body-secondary  mx-lg-3 m-3 p-lg-0 p-3 px-lg-3 d-flex align-items-center my-1"
           >
             <span><b class="text-primary" id="course">${course}</b> <i class="text-muted"> by ${teacher} </i> </span>
           </div>
           <div
-            class="attendance ${statusColor} border rounded d-flex justify-content-center align-items-center text-white ms-auto p-1 px-2"
+            class="attendance ${statusColor} border rounded d-flex justify-content-center align-items-center text-white ms-lg-auto m-3 p-1 px-2 my-lg-1 my-2 "
           >
             <span>${status}</span>
           </div>
-
+        
           ${rescheduleButton}
         </div>
 

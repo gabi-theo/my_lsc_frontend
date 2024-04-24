@@ -23,7 +23,7 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog" style="max-width: 900px;">
+      <div class="modal-dialog" style="max-width: 80%;">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">
@@ -47,7 +47,7 @@
                   id="onl"
                   value="onl"
                 />
-                <label class="form-check-label" for="inlineRadio1"
+                <label class="form-check-label" for="onl"
                   >Online</label
                 >
               </div>
@@ -59,34 +59,37 @@
                   id="sed"
                   value="sed"
                 />
-                <label class="form-check-label" for="inlineRadio2"
+                <label class="form-check-label" for="sed"
                   >School</label
                 >
               </div>
+
               <div class="form-check form-check-inline">
                 <input
                   class="form-check-input reschedule-radio"
                   type="radio"
                   name="inlineRadioOptions"
-                  id="any"
-                  value="any"
+                  id="default"
+                  value="default"
+                  checked
+                  hidden
                 />
-                <label class="form-check-label" for="inlineRadio3">Any</label>
               </div>
+              
             </div>
 
             <div class="available-container row">
-              <div class="col">
+              <div class="col-lg">
                 <h5 class="text-info mx-1">Courses</h2>
-                <div class="available-subcontainer border border-info rounded m-1 text-info courses-container"></div>
+                <div class="available-subcontainer border border-info rounded m-1 text-info courses-container p-2"></div>
               </div>
-            <div class="col">
+            <div class="col-lg">
               <h5 class="text-secondary mx-1">Make-ups</h2>
-              <div class="available-subcontainer col border border-secondary rounded m-1 text-secondary makeups-container"></div>
+              <div class="available-subcontainer border border-secondary rounded m-1 text-secondary makeups-container  p-2"></div>
             </div>
-            <div class="col">
+            <div class="col-lg">
               <h5 class="text-primary mx-1">30 mins</h2>
-              <div class="available-subcontainer col border border-primary rounded m-1 text-primary 30mins-container"></div>
+              <div class="available-subcontainer border border-primary rounded m-1 text-primary mins-container  p-2"></div>
             </div>
 
 
@@ -94,7 +97,7 @@
           </div>
           <div class="reschedule-container"></div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+            <button type="button" class="btn btn-light closeButton" data-bs-dismiss="modal">
               Close
             </button>
             <button

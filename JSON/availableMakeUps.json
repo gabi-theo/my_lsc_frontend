@@ -2,7 +2,22 @@
     "onl": {
         "courses": [],
         "make_ups": [],
-        "30_mins": []
+        "30_mins": {
+            "make_up_possible_before_session": {
+                "status": true,
+                "trainers": {},
+                "date": "2024-03-30",
+                "start": "21:56:43",
+                "end": "19:26:43"
+            },
+            "make_up_possible_after_session": {
+                "status": true,
+                "trainers": {},
+                "date": "2024-03-30",
+                "start": "11:56:43",
+                "end": "21:26:43"
+            }
+        }
     },
     "sed": {
         "courses": [
@@ -34,7 +49,7 @@
         "make_ups": [
             {
                 "id": "c1280089-e60e-40ec-904e-0e0a47660640",
-                "session__id": "469b1a4c-7f61-4baf-81b6-47535c75a5e3",
+                "session__id": "b1194fae-61ab-4ded-b1e6-ef0a175ff1ae",
                 "session__session_no": 3,
                 "trainer": null,
                 "date_time": "2024-05-22T00:00:00.040347Z",
@@ -43,7 +58,7 @@
             },
             {
                 "id": "96974d8e-9cb9-4a76-bf4e-3c256b75a2a1",
-                "session__id": "469b1a4c-7f61-4baf-81b6-47535c75a5e3",
+                "session__id": "b1194fae-61ab-4ded-b1e6-ef0a175ff1ae",
                 "session__session_no": 3,
                 "trainer": null,
                 "date_time": "2024-05-22T00:00:00.316724Z",
@@ -62,16 +77,16 @@
         ],
         "30_mins": {
             "make_up_possible_before_session": {
-                "status": false,
+                "status": true,
                 "trainers": {},
-                "date": "2024-05-01",
+                "date": "2024-03-30",
                 "start": "18:56:43",
                 "end": "19:26:43"
             },
             "make_up_possible_after_session": {
-                "status": false,
+                "status": true,
                 "trainers": {},
-                "date": "2024-05-01",
+                "date": "2024-03-30",
                 "start": "20:56:43",
                 "end": "21:26:43"
             }
