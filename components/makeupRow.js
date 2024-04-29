@@ -105,7 +105,7 @@ const generateRow = () => {
             }
           });
 
-          // console.log(newData);
+          console.log(newData);
 
           const container = document.querySelector(".table-container");
 

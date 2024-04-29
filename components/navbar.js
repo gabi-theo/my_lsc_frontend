@@ -1,5 +1,7 @@
-const getUserType = (userType = "Parent") => {
-  return userType;
+import { getCookie } from "./cookies.js";
+
+const getRole = () => {
+  return getCookie("role");
 };
 
 const navbar = () => {
@@ -36,7 +38,7 @@ const navbar = () => {
         >
           logiscool
         </h5>
-        <span class="badge bg-primary ms-1">${getUserType()}</span>
+        <span class="badge bg-primary ms-1">${getRole()}</span>
         <button
           type="button"
           class="btn-close"
@@ -61,7 +63,7 @@ const navbar = () => {
             <a class="nav-link" href="#">Feedback</a>
           </li>
           <li class="nav-item d-flex justify-content-end mt-5">
-            <button class="btn btn-sm btn-info text-white">logout</button>
+            <button class="btn btn-sm btn-info text-white nav-logout">logout</button>
           </li>
         </ul>
       </div>
