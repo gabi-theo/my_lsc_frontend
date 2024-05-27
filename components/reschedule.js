@@ -1,3 +1,5 @@
+import { reschedulePOST } from "./reschedulePOST.js";
+
 const clearContent = () => {
   document.querySelector(".closeButton").addEventListener("click", () => {
     document.querySelector(".courses-container").innerHTML = "";
@@ -17,11 +19,16 @@ const clearContent = () => {
 const reschedule = () => {
   let sessionID;
   let sessionDate;
+  let absenceID;
   document.addEventListener("click", (e) => {
     if (e.target.classList.contains("reschedule-button")) {
       sessionID = e.target.parentElement.id;
+      absenceID = e.target.id;
       console.log(sessionID);
       sessionID = sessionID;
+      // console.log(absenceID);
+      // absenceID = absenceID;
+
       const parentContainer = e.target.parentElement;
       const sessionDateElement = parentContainer.querySelector(".sessionDate");
       sessionDate = sessionDateElement.textContent;
@@ -69,7 +76,7 @@ const reschedule = () => {
               const sessionContainer = document.createElement("div");
               sessionContainer.className = "form-check my-2";
               sessionContainer.innerHTML = `
-              <input type="radio" class="btn-check" name="options" id="${course.id}" autocomplete="off">
+              <input type="radio" class="btn-check courses reschedule-selection" name="options" id="${course.id}" autocomplete="off">
               <label class="btn btn-outline-info" for="${course.id}">${course.date} at ${course.course_session__start_time} <span class="badge ${badgeColor} text-white ms-2">${course.course_session__available_places_for_make_up_on_site} spots</span> </label>
                 `;
               document
@@ -103,7 +110,7 @@ const reschedule = () => {
               const sessionContainer = document.createElement("div");
               sessionContainer.className = "form-check my-2";
               sessionContainer.innerHTML = `
-              <input type="radio" class="btn-check" name="options" id="${make_up.id}" autocomplete="off">
+              <input type="radio" class="btn-check makeup reschedule-selection" name="options" id="${make_up.id}" autocomplete="off">
               <label class="btn btn-outline-secondary" for="${make_up.id}">${formattedDate}</label>
                 `;
               document
@@ -121,7 +128,7 @@ const reschedule = () => {
             const sessionContainer = document.createElement("div");
             sessionContainer.className = "form-check my-2";
             sessionContainer.innerHTML = `
-              <input type="radio" class="btn-check" name="options" id="${data[buttonValue]["30_mins"].make_up_possible_before_session.date}-${data[buttonValue]["30_mins"].make_up_possible_before_session.start}" autocomplete="off">
+              <input type="radio" class="btn-check mins reschedule-selection" name="options" id="${data[buttonValue]["30_mins"].make_up_possible_before_session.date}-${data[buttonValue]["30_mins"].make_up_possible_before_session.start}" autocomplete="off" value="before">
               <label class="btn btn-outline-primary" for="${data[buttonValue]["30_mins"].make_up_possible_before_session.date}-${data[buttonValue]["30_mins"].make_up_possible_before_session.start}">Before in ${data[buttonValue]["30_mins"].make_up_possible_before_session.date} at ${data[buttonValue]["30_mins"].make_up_possible_before_session.start}</label>
                 `;
             document
@@ -138,12 +145,14 @@ const reschedule = () => {
             const sessionContainer = document.createElement("div");
             sessionContainer.className = "form-check my-2";
             sessionContainer.innerHTML = `
-              <input type="radio" class="btn-check" name="options" id="${data[buttonValue]["30_mins"].make_up_possible_after_session.date}-${data[buttonValue]["30_mins"].make_up_possible_after_session.start}" autocomplete="off">
+              <input type="radio" class="btn-check mins reschedule-selection" name="options" id="${data[buttonValue]["30_mins"].make_up_possible_after_session.date}-${data[buttonValue]["30_mins"].make_up_possible_after_session.start}" autocomplete="off" value="after">
               <label class="btn btn-outline-primary" for="${data[buttonValue]["30_mins"].make_up_possible_after_session.date}-${data[buttonValue]["30_mins"].make_up_possible_after_session.start}">After in ${data[buttonValue]["30_mins"].make_up_possible_after_session.date} at ${data[buttonValue]["30_mins"].make_up_possible_after_session.start}</label>
                 `;
             document
               .querySelector(".mins-container")
               .appendChild(sessionContainer);
+
+            sendPOST(absenceID);
           }
         });
       });
@@ -154,6 +163,65 @@ const reschedule = () => {
         error
       );
     });
+};
+
+const sendPOST = (absenceId) => {
+  let selectedMins = "None";
+  let selectedSession = "None";
+  let selectedMakeup = "None";
+  let emailNotifications = false;
+
+  document
+    .querySelector(".email-notifications")
+    .addEventListener("click", () => {
+      emailNotifications = sendNotifications();
+      console.log("Email " + emailNotifications);
+    });
+
+  const sessions = document.querySelectorAll(".reschedule-selection");
+  sessions.forEach((session) => {
+    session.addEventListener("click", (e) => {
+      if (e.target.classList.contains("mins")) {
+        selectedMins = e.target.value;
+      } else {
+        selectedMins = "None";
+      }
+
+      if (e.target.classList.contains("courses")) {
+        selectedSession = e.target.id;
+      } else {
+        selectedSession = "None";
+      }
+
+      if (e.target.classList.contains("makeup")) {
+        selectedMakeup = e.target.id;
+      } else {
+        selectedMakeup = "None";
+      }
+    });
+  });
+
+  document.querySelector(".save-reschedule").addEventListener("click", () => {
+    reschedulePOST(
+      absenceId,
+      selectedSession,
+      selectedMakeup,
+      selectedMins,
+      emailNotifications
+    );
+    console.log(
+      absenceId,
+      selectedSession,
+      selectedMakeup,
+      selectedMins,
+      emailNotifications
+    );
+  });
+};
+
+const sendNotifications = () => {
+  const isChecked = document.querySelector(".email-notifications").checked;
+  return isChecked;
 };
 
 export { reschedule, clearContent };

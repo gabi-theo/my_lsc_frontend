@@ -8,16 +8,18 @@ const setCookies = (name, value, daysToExpire) => {
   document.cookie = cookieString;
 };
 
-const loginCookies = (schools, role, userID) => {
-  setCookies("schools", schools, 365);
+const loginCookies = (schools, role, userID, studentIDs) => {
+  setCookies("schools", encodeURIComponent(JSON.stringify(schools)), 365);
   setCookies("role", role, 365);
   setCookies("userID", userID, 365);
+  setCookies("studentIDs", studentIDs, 365);
 };
 
 const getCookie = (cookieName) => {
   var cookies = document.cookie.split(";");
   for (var i = 0; i < cookies.length; i++) {
     var cookie = cookies[i].trim();
+
     if (cookie.indexOf(cookieName + "=") === 0) {
       return decodeURIComponent(cookie.substring(cookieName.length + 1));
     }
@@ -39,3 +41,4 @@ const deleteCookies = () => {
 export { loginCookies };
 export { getCookie };
 export { deleteCookies };
+export { setCookies };

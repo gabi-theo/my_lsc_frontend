@@ -1,7 +1,109 @@
 import { getCookie } from "./cookies.js";
+import { setCookies } from "./cookies.js";
+
+const changeSchool = () => {
+  const selectedSchool = document.querySelector(".school-selector");
+  selectedSchool.addEventListener("change", () => {
+    let selectedOption = selectedSchool.options[selectedSchool.selectedIndex];
+    console.log("it changed!" + selectedOption.value);
+
+    setCookies("selected-school", selectedOption.value, 365);
+  });
+};
+
+const changeStudent = () => {
+  const selectedStudent = document.querySelector(".student-selector");
+  selectedStudent.addEventListener("change", () => {
+    let selectedOption = selectedStudent.options[selectedStudent.selectedIndex];
+    console.log("it changed!" + selectedOption.value);
+
+    setCookies("selected-student", selectedOption.value, 365);
+  });
+};
+
+const setInitialSchool = () => {
+  if (getCookie("selected-school")) {
+    return;
+  }
+  const selectedSchool = document.querySelector(".school-selector");
+  let selectedOption = selectedSchool.options[selectedSchool.selectedIndex];
+  setCookies("selected-school", selectedOption.value, 365);
+};
+
+const setInitialStudent = () => {
+  if (getCookie("selected-student")) {
+    return;
+  }
+  const selectedStudent = document.querySelector(".student-selector");
+  let selectedOption = selectedStudent.options[selectedStudent.selectedIndex];
+  setCookies("selected-student", selectedOption.value, 365);
+};
 
 const getRole = () => {
   return getCookie("role");
+};
+
+const getSchools = () => {
+  const encodedData = getCookie("schools");
+  if (!encodedData) return []; // Return an empty array if no data found
+  const decodedData = decodeURIComponent(encodedData);
+  return JSON.parse(decodedData);
+};
+
+const getStudents = () => {
+  const input = getCookie("studentIDs");
+  if (!input) return []; // Return an empty array if no data found
+
+  const pairs = input.split(",");
+  const result = pairs.map((pair) => {
+    // Split each pair by underscore to separate ID and name
+    const [id, firstName, lastName] = pair.split("_");
+    const name = `${firstName} ${lastName}`;
+    return { id, name };
+  });
+  return result;
+};
+
+const generateSchoolDropdown = () => {
+  const schools = getSchools();
+  const dropdown = document.createElement("select");
+  dropdown.classList =
+    "form-select text-primary form-select-sm border border-primary school-selector";
+
+  schools.forEach((school) => {
+    const id = Object.keys(school)[0];
+    const name = school[id];
+
+    const option = document.createElement("option");
+
+    option.value = id;
+    option.textContent = name;
+
+    dropdown.appendChild(option);
+  });
+
+  return dropdown;
+};
+
+const generateStudentDropdown = () => {
+  const students = getStudents();
+  const dropdown = document.createElement("select");
+  dropdown.classList =
+    "form-select text-primary form-select-sm border border-primary student-selector";
+
+  students.forEach((student) => {
+    const id = student.id;
+    const name = student.name;
+
+    const option = document.createElement("option");
+
+    option.value = id;
+    option.textContent = name;
+
+    dropdown.appendChild(option);
+  });
+
+  return dropdown;
 };
 
 const navbar = () => {
@@ -47,6 +149,17 @@ const navbar = () => {
         ></button>
         
       </div>
+      <div class="container d-flex my-2" id="schoolDropdownContainer">
+        
+      <span class="text-primary p-1 pe-3">School</span> ${
+        generateSchoolDropdown().outerHTML
+      }</div>
+
+      <div class="container d-flex my-2" id="studentDropdownContainer">
+        
+      <span class="text-primary p-1 pe-3">Student</span> ${
+        generateStudentDropdown().outerHTML
+      }</div>
       
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -71,6 +184,14 @@ const navbar = () => {
   </div>
 </nav>
     `;
+  setInitialSchool();
+  setInitialStudent();
+  changeSchool();
+  changeStudent();
 };
 
+// Call navbar function to generate navbar when the document is ready
+document.addEventListener("DOMContentLoaded", navbar);
+
 export { navbar };
+export { changeSchool };

@@ -18,7 +18,8 @@
         "school_for_absence": "Barnett, Glover and Ross",
         "student_school": "Barnett, Glover and Ross",
         "make_up_date_and_time": "2024-03-17T00:00:00.291519Z",
-        "trainer": "Barbara Burns"
+        "trainer": "Barbara Burns",
+        "absent_on_session_id": "b1194fae-61ab-4ded-b1e6-ef0a175ff1ae"
     },
     {
         "id": "01a4a330-a90f-438c-9619-f4414701f5e0",
@@ -39,7 +40,8 @@
         "school_for_absence": "Barnett, Glover and Ross",
         "student_school": "Barnett, Glover and Ross",
         "make_up_date_and_time": null,
-        "trainer": null
+        "trainer": null,
+        "absent_on_session_id": "V1194fae-61ab-4ded-b1e6-ef0a175ff1ae"
     },
     {
         "id": "9bbd90db-8fcf-47a7-b07d-030872e97760",
@@ -60,7 +62,8 @@
         "school_for_absence": "Barnett, Glover and Ross",
         "student_school": "Barnett, Glover and Ross",
         "make_up_date_and_time": null,
-        "trainer": null
+        "trainer": null,
+        "absent_on_session_id": "N1194fae-61ab-4ded-b1e6-ef0a175ff1ae"
     },
     {
         "id": "47de2013-1688-42df-a7d5-02f54986874b",
@@ -81,7 +84,8 @@
         "school_for_absence": "Barnett, Glover and Ross",
         "student_school": "Barnett, Glover and Ross",
         "make_up_date_and_time": "2024-03-17T00:00:00.291519Z",
-        "trainer": "Barbara Burns"
+        "trainer": "Barbara Burns",
+        "absent_on_session_id": "J1194fae-61ab-4ded-b1e6-ef0a175ff1ae"
     },
     {
         "id": "1209ff45-4c67-4c0f-b0c9-c73505352c0a",
@@ -102,7 +106,8 @@
         "school_for_absence": "Barnett, Glover and Ross",
         "student_school": "Barnett, Glover and Ross",
         "make_up_date_and_time": null,
-        "trainer": null
+        "trainer": null,
+        "absent_on_session_id": "G1194fae-61ab-4ded-b1e6-ef0a175ff1ae"
     },
     {
         "id": "f4c43681-463b-4db5-b46b-b2d520604496",
@@ -123,7 +128,8 @@
         "school_for_absence": "Barnett, Glover and Ross",
         "student_school": "Barnett, Glover and Ross",
         "make_up_date_and_time": null,
-        "trainer": null
+        "trainer": null,
+        "absent_on_session_id": "S1194fae-61ab-4ded-b1e6-ef0a175ff1ae"
     },
     {
         "id": "b251bd66-dafe-4183-9089-da111317b974",
@@ -144,7 +150,8 @@
         "school_for_absence": "Barnett, Glover and Ross",
         "student_school": "Barnett, Glover and Ross",
         "make_up_date_and_time": "2024-03-17T00:00:00.291519Z",
-        "trainer": "Barbara Burns"
+        "trainer": "Barbara Burns",
+        "absent_on_session_id": "Z1194fae-61ab-4ded-b1e6-ef0a175ff1ae"
     },
     {
         "id": "c435e106-c2ce-4dfa-837c-cba0dee9ad0d",
@@ -165,7 +172,8 @@
         "school_for_absence": "Barnett, Glover and Ross",
         "student_school": "Barnett, Glover and Ross",
         "make_up_date_and_time": null,
-        "trainer": null
+        "trainer": null,
+        "absent_on_session_id": "R1194fae-61ab-4ded-b1e6-ef0a175ff1ae"
     },
     {
         "id": "5b228ad1-6f77-4c3e-9608-f6089a7ce985",
@@ -186,7 +194,8 @@
         "school_for_absence": "Barnett, Glover and Ross",
         "student_school": "Barnett, Glover and Ross",
         "make_up_date_and_time": "2024-03-17T00:00:00.291519Z",
-        "trainer": "Barbara Burns"
+        "trainer": "Barbara Burns",
+        "absent_on_session_id": "A1194fae-61ab-4ded-b1e6-ef0a175ff1ae"
     },
     {
         "id": "45a02ccc-3981-4058-8871-45419435f264",
@@ -207,6 +216,7 @@
         "school_for_absence": "Barnett, Glover and Ross",
         "student_school": "Barnett, Glover and Ross",
         "make_up_date_and_time": null,
-        "trainer": null
+        "trainer": null,
+        "absent_on_session_id": "de66293a-f256-4a4b-923f-17ac95933bf3"
     }
 ]
