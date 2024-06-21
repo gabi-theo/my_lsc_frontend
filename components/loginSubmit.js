@@ -76,4 +76,4 @@ const userLogin = () => {
   });
 };
 
-export { fakeLogin };
+export { userLogin };

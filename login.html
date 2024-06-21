@@ -7,24 +7,34 @@
     <link rel="stylesheet" href="./bootstrap/css/custom.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="login.js" type="module"></script>
+    <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
-    <div class="container-fluid row">
+    <div class="container-fluid row main-container bg-primary">
       <div class="col"></div>
-      <div class="subcontainer col-4 border rounded-4 p-4 shadow bg-white">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Username</label
-          >
-          <input type="text" class="form-control username" id="username" />
+      <div class="subcontainer col-lg-4 col-md-6 col-sm-8 rounded-4 mb-5 bg-body-tertiary shadow-lg bg-white">
+        <div class="mb-1">
+          <img
+            class="ms-2"
+            src="../resources/header-logo-desktop.svg"
+            style="width: 6rem "/>
+          <br></br>
+          <h5 class="text-center text-dark fw-bold ">Log in to your account</h5>
+          <label for="exampleFormControlInput1" class="form-label"></label>
+          <input type="text" class="form-control username" placeholder="Username" id="username">
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label password"
-            >Password</label
-          >
-          <input type="password" class="form-control" id="password" />
+        <div class="mb-4">
+          <label for="exampleFormControlInput1" class="form-label password"></label>
+          <input type="password" class="form-control password" placeholder="Password" id="password">
         </div>
-        <div class="btn btn-primary text-white login-button">Login</div>
+        <div class="btn btn-primary main-container text-white login-button mb-4">Login</div>
+        
+        <!-- <a href="/register" class="btn btn-white main-container fw-bold text-primary">
+          I don't have an account </a>
+          <br></br>
+        <a href="/emailverification" class="btn btn-white text-start text-white">
+          Forgot your password? </a>
+          <br></br> -->
       </div>
       <div class="col"></div>
     </div>

@@ -1,0 +1,22 @@
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:100%;
+    margin: 0;
+}
+
+.subcontainer {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(211, 227, 233, 0.090),
+      rgba(0, 0, 0, 0.225)
+    );
+  }
+ 

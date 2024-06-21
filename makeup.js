@@ -1,8 +1,7 @@
 import { navbar } from "./components/navbar.js";
-import { generateRow } from "./components/makeupRow.js";
+import { newGenerateRow } from "./components/makeupRow.js";
 import { reschedule, clearContent } from "./components/reschedule.js";
 import { userLogout } from "./components/logout.js";
-import { getAbsenceID } from "./components/makeupRow.js";
 
 // import {
 //   sessionType,
@@ -19,11 +18,10 @@ import {
 
 document.addEventListener("DOMContentLoaded", () => {
   navbar();
-  generateRow();
+  newGenerateRow();
   reschedule();
   clearContent();
   userLogout();
-  getAbsenceID();
   fetchData();
   sessionType();
   // calculateRemainingIntervals();

@@ -1,0 +1,243 @@
+[
+    {
+        "course_schedule_id": "91d8e219-07f2-4a9b-8e24-3d5f82e5293b",
+        "sessions": [
+            {
+                "session_id": "9fca1aed-3eea-4ed5-8640-feeafc225ba2",
+                "session_date": "2024-01-15",
+                "session_number": 1,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "a1d0db73-1cf6-4bf0-bd3d-f03f52c67cd6",
+                "session_date": "2024-01-22",
+                "session_number": 2,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "df100593-8566-4cf9-8ddb-582ba6aa490b",
+                "session_date": "2024-01-29",
+                "session_number": 3,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "b5b21d51-c018-45b2-9e9e-acd36aa3cfc7",
+                "session_date": "2024-02-05",
+                "session_number": 4,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "090583b3-a9e5-440e-aa3f-b9574c25c07a",
+                "session_date": "2024-02-12",
+                "session_number": 5,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "aea98fd3-659f-40ba-b0b7-6a387a44a9e9",
+                "session_date": "2024-02-19",
+                "session_number": 6,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "0443be49-765a-4370-b230-762757b538b1",
+                "session_date": "2024-02-26",
+                "session_number": 7,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "90e82673-8993-471f-b33c-9fda4a9dd783",
+                "session_date": "2024-03-04",
+                "session_number": 8,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "d9a95aa9-d327-460c-a901-d1f3282558fc",
+                "session_date": "2024-03-11",
+                "session_number": 9,
+                "presence_status": "made_up",
+                "absence_id": null
+            },
+            {
+                "session_id": "f2b21d0c-2ced-4f46-af87-38c2ab3120f7",
+                "session_date": "2024-03-18",
+                "session_number": 10,
+                "presence_status": "made_up",
+                "absence_id": null
+            },
+            {
+                "session_id": "e5d57643-0a3b-40c4-8e5f-70805392124f",
+                "session_date": "2024-03-25",
+                "session_number": 11,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "88b12ec4-23f0-4510-8505-6944c5598034",
+                "session_date": "2024-04-01",
+                "session_number": 12,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "f02aeb2f-045a-4f00-824d-6671574c854d",
+                "session_date": "2024-04-08",
+                "session_number": 13,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "ff9cabec-d1d8-4a61-9d5f-0167bdea393b",
+                "session_date": "2024-04-15",
+                "session_number": 14,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "61d28028-a65a-4f95-8e2d-e719252063c2",
+                "session_date": "2024-04-22",
+                "session_number": 15,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "2f7d76fb-c86d-40d3-815c-d5121d2abd3d",
+                "session_date": "2024-04-29",
+                "session_number": 16,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "cf9022ca-f2aa-49bf-b42d-c2be2d838ddd",
+                "session_date": "2024-05-06",
+                "session_number": 17,
+                "presence_status": "made_up",
+                "absence_id": null
+            }
+        ]
+    },
+    {
+        "course_schedule_id": "b094cc20-64d0-4015-9b2a-f1e0cd3cf2f0",
+        "sessions": [
+            {
+                "session_id": "a2d733a3-245c-4476-ba19-7c76b5819427",
+                "session_date": "2024-01-16",
+                "session_number": 1,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "4a8d9c63-5630-4ebf-837d-3b09c1724105",
+                "session_date": "2024-01-23",
+                "session_number": 2,
+                "presence_status": "made_up",
+                "absence_id": null
+            },
+            {
+                "session_id": "42baa741-115b-4260-a37a-02ad4333ee22",
+                "session_date": "2024-01-30",
+                "session_number": 3,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "74538875-b17b-4257-a70a-98b2ceb9515e",
+                "session_date": "2024-02-06",
+                "session_number": 4,
+                "presence_status": "made_up",
+                "absence_id": null
+            },
+            {
+                "session_id": "afe0aa3d-1a67-4091-b724-8c25b894b093",
+                "session_date": "2024-02-13",
+                "session_number": 5,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "b4c2b8d9-2af4-4d6c-af11-63a5a24742d6",
+                "session_date": "2024-02-20",
+                "session_number": 6,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "17dc0ac4-6654-491f-a4dd-2f988fe8072a",
+                "session_date": "2024-02-27",
+                "session_number": 7,
+                "presence_status": "made_up",
+                "absence_id": null
+            },
+            {
+                "session_id": "31548de6-edff-4709-9b85-8ab0903cad37",
+                "session_date": "2024-03-05",
+                "session_number": 8,
+                "presence_status": "made_up",
+                "absence_id": null
+            },
+            {
+                "session_id": "416760c2-6718-46fd-8234-24f5fdd39399",
+                "session_date": "2024-03-12",
+                "session_number": 9,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "a9a75a53-5afb-4b1f-9d99-af4dad94315d",
+                "session_date": "2024-03-19",
+                "session_number": 10,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "23ed910f-23d0-40a2-acbe-476a19edec2b",
+                "session_date": "2024-03-26",
+                "session_number": 11,
+                "presence_status": "present",
+                "absence_id": null
+            },
+            {
+                "session_id": "0be7a5db-4a82-4a6b-890f-2f4028a6000a",
+                "session_date": "2024-04-02",
+                "session_number": 12,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "7c9fe23a-1755-4ab8-a343-fd16692ba032",
+                "session_date": "2024-04-09",
+                "session_number": 13,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "ae1e5dd6-d46e-4b46-9180-96fd9704e634",
+                "session_date": "2024-04-16",
+                "session_number": 14,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "618ce54c-2089-44c6-8157-de3c25daeb03",
+                "session_date": "2024-04-23",
+                "session_number": 15,
+                "presence_status": "absent",
+                "absence_id": null
+            },
+            {
+                "session_id": "35c1a1bb-dffe-4f42-bbdc-c1699c984c0a",
+                "session_date": "2024-04-30",
+                "session_number": 16,
+                "presence_status": "made_up",
+                "absence_id": null
+            }
+ ]
+}
+]

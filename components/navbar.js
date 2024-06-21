@@ -18,25 +18,35 @@ const changeStudent = () => {
     console.log("it changed!" + selectedOption.value);
 
     setCookies("selected-student", selectedOption.value, 365);
+    window.location.reload();
+    
   });
 };
 
 const setInitialSchool = () => {
-  if (getCookie("selected-school")) {
+  const selectedSchool = document.querySelector(".school-selector");
+  const schoolCookie = getCookie("selected-school")
+  if (schoolCookie) {
+    selectedSchool.value = schoolCookie;
     return;
   }
-  const selectedSchool = document.querySelector(".school-selector");
+  
   let selectedOption = selectedSchool.options[selectedSchool.selectedIndex];
   setCookies("selected-school", selectedOption.value, 365);
+  selectedSchool.value = selectedOption.value;
 };
 
 const setInitialStudent = () => {
-  if (getCookie("selected-student")) {
+  const selectedStudent = document.querySelector(".student-selector");
+  const studentCookie = getCookie("selected-student");
+  if (studentCookie) {
+    selectedStudent.value = studentCookie;
     return;
   }
-  const selectedStudent = document.querySelector(".student-selector");
+  
   let selectedOption = selectedStudent.options[selectedStudent.selectedIndex];
   setCookies("selected-student", selectedOption.value, 365);
+  selectedStudent.value = selectedOption.value
 };
 
 const getRole = () => {
