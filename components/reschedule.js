@@ -6,6 +6,10 @@ const clearContent = () => {
     document.querySelector(".courses-container").innerHTML = "";
     document.querySelector(".makeups-container").innerHTML = "";
     document.querySelector(".mins-container").innerHTML = "";
+    document.querySelector("#datepicker").value = "";
+    document.querySelector("#teacher-selector").value ="";
+    document.querySelector("#free-interval-selector").value="";
+    $('#collapseExample').collapse('hide');
 
     const radioButtons = document.querySelectorAll(".reschedule-radio");
 

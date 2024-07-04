@@ -125,7 +125,7 @@ const navbar = () => {
   document.querySelector(".navbar").innerHTML = `
   <nav class="navbar bg-body-tertiary fixed-top border-bottom border-primary pt-0">
   <div class="container-fluid">
-  <img class="ms-3" src="../resources/header-logo-desktop.svg" style="width: 6rem;">
+  <a href="./home.html"><img class="ms-3" src="../resources/header-logo-desktop.svg" style="width: 6rem;"></a>
    
     <button
       class="navbar-toggler"

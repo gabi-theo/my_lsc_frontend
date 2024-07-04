@@ -40,39 +40,75 @@ const fakeLogin = () => {
 
 //===Se va utiliza in loc de fakeLogin din comment in momentul in care e live API-ul===
 
+// const userLogin = () => {
+//   document.querySelector(".login-button").addEventListener("click", () => {
+//     const userLogin = {
+//       username: document.querySelector("#username").value,
+//       password: document.querySelector("#password").value,
+//     };
+//     console.log(userLogin);
+
+//     fetch("http://127.0.0.1:8000/api/auth/login/", {
+//       method: "POST",
+//       body: JSON.stringify(userLogin),
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//     })
+//       .then((response) => {
+//         if (!response.ok) {
+//           throw new Error(`HTTP error! Status: ${response.status}`);
+//         }
+
+//         return response.json();
+//       })
+//       .then((userInfo) => {
+//         console.log(userInfo);
+//         userData = userInfo;
+//         insertCookies();
+//         window.location.href = "./home.html";
+//       })
+//       .catch((error) => {
+//         console.error("Form submission error:", error);
+
+//         newError("Username or password are not correct!");
+//       });
+//   });
+// };
+
 const userLogin = () => {
-  document.querySelector(".login-button").addEventListener("click", () => {
+  document.querySelector(".login-button").addEventListener("click", async () => {
     const userLogin = {
       username: document.querySelector("#username").value,
       password: document.querySelector("#password").value,
     };
-    console.log(userLogin);
+    // console.log(userLogin);
 
-    fetch("http://127.0.0.1:8000/api/auth/login/", {
-      method: "POST",
-      body: JSON.stringify(userLogin),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        return response.json();
-      })
-      .then((userInfo) => {
-        console.log(userInfo);
-        userData = userInfo;
-        insertCookies();
-        window.location.href = "./home.html";
-      })
-      .catch((error) => {
-        console.error("Form submission error:", error);
-
-        newError("Username or password are not correct!");
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/auth/login/", {
+        method: "POST",
+        body: JSON.stringify(userLogin),
+        headers: {
+          "Content-Type": "application/json",
+        },
       });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const userInfo = await response.json();
+      console.log(userInfo);
+      userData = userInfo;
+      // Assuming insertCookies is defined somewhere
+      insertCookies(userInfo);
+      window.location.href = "./home.html";
+    } catch (error) {
+      console.error("Form submission error:", error);
+
+      // Assuming newError is defined somewhere
+      newError("Username or password are not correct!");
+    }
   });
 };
 
