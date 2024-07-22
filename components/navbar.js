@@ -19,18 +19,17 @@ const changeStudent = () => {
 
     setCookies("selected-student", selectedOption.value, 365);
     window.location.reload();
-    
   });
 };
 
 const setInitialSchool = () => {
   const selectedSchool = document.querySelector(".school-selector");
-  const schoolCookie = getCookie("selected-school")
+  const schoolCookie = getCookie("selected-school");
   if (schoolCookie) {
     selectedSchool.value = schoolCookie;
     return;
   }
-  
+
   let selectedOption = selectedSchool.options[selectedSchool.selectedIndex];
   setCookies("selected-school", selectedOption.value, 365);
   selectedSchool.value = selectedOption.value;
@@ -43,10 +42,10 @@ const setInitialStudent = () => {
     selectedStudent.value = studentCookie;
     return;
   }
-  
+
   let selectedOption = selectedStudent.options[selectedStudent.selectedIndex];
   setCookies("selected-student", selectedOption.value, 365);
-  selectedStudent.value = selectedOption.value
+  selectedStudent.value = selectedOption.value;
 };
 
 const getRole = () => {
@@ -125,7 +124,7 @@ const navbar = () => {
   document.querySelector(".navbar").innerHTML = `
   <nav class="navbar bg-body-tertiary fixed-top border-bottom border-primary pt-0">
   <div class="container-fluid">
-  <a href="./home.html"><img class="ms-3" src="../resources/header-logo-desktop.png" style="width: 6rem;"></a>
+  <a href="./home.html"><img class="ms-3" src="./resources/header-logo-desktop.png" style="width: 6rem;"></a>
    
     <button
       class="navbar-toggler"
