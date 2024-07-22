@@ -1,3 +1,23 @@
+let calendarData;
+
+function fetchData() {
+  fetch('../JSON/calendar.json')
+  .then(response => response.json()) 
+  .then(data => {
+    console.log(data); 
+    calendarData = data; 
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+
+function asignData (){
+
+   
+ }
+
+
 function addDate() {
     const today = new Date();
     let year = today.getFullYear();
@@ -10,7 +30,7 @@ function addDate() {
       today.toDateString() +
       "</span></div>";
     document.querySelector(".today").id =
-      "event-" + year + "-" + month + "-" + day;
+      day + "-" + month + "-" + year;
   
     let calculatedDate = new Date();
     let calculatedDateTwo = new Date();
@@ -24,12 +44,11 @@ function addDate() {
       calculatedDate.setDate(calculatedDate.getDate() + 1);
       i = i - 1;
       let formatedDated =
-        "event-" +
-        calculatedDate.getFullYear() +
+        
+        ("0" + calculatedDate.getDate()).slice(-2) +
         "-" +
         ("0" + (calculatedDate.getMonth() + 1)).slice(-2) +
-        "-" +
-        ("0" + calculatedDate.getDate()).slice(-2);
+        "-" +calculatedDate.getFullYear();
       document.querySelector(".column" + i).innerHTML =
         "<div class='card-title'>" + calculatedDate.toDateString() + "</div>";
       document.querySelector(".column" + i).id = formatedDated;
@@ -38,12 +57,11 @@ function addDate() {
     iterationArrayTwo.forEach(() => {
       calculatedDateTwo.setDate(calculatedDateTwo.getDate() - 1);
       let formatedDated =
-        "event-" +
-        calculatedDateTwo.getFullYear() +
+        
+        ("0" + calculatedDateTwo.getDate()).slice(-2) +
         "-" +
         ("0" + (calculatedDateTwo.getMonth() + 1)).slice(-2) +
-        "-" +
-        ("0" + calculatedDateTwo.getDate()).slice(-2);
+        "-" + calculatedDateTwo.getFullYear();
   
       r = r + 1;
       document.querySelector(".column" + r).innerHTML =
