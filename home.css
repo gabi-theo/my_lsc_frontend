@@ -31,3 +31,7 @@ body{
 .back:hover, .next:hover {
     cursor:pointer;
 }
+
+.hide-resize {
+    display: none;
+}

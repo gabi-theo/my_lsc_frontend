@@ -92,7 +92,7 @@ function asignData(calendarData) {
         info.courses.forEach((course) => {
           let subDiv = document.createElement("div");
           subDiv.innerHTML = `
-        <div class="card my-2 border border-primary">
+        <div class="card m-4 shadow-sm">
           <div class="card-body">
             <p class="card-subtitle text-primary">Course: ${course.course_session}</p>
             <p class="card-text text-secondary">Session: ${course.session_no}</p>
@@ -118,4 +118,43 @@ function displayEvents() {
     })
 }
 
-export { setInitialDates, changeDates, fetchData, displayEvents};
+function resizeWindow() {
+
+    const date1 = document.querySelector('.news-1');
+    const date2 = document.querySelector('.news-2');
+    const date3 = document.querySelector('.news-3');
+    
+    const date5 = document.querySelector('.news-5');
+    const date6 = document.querySelector('.news-6');
+    const date7 = document.querySelector('.news-7');
+
+    const fullSize = 1145;
+    const medSize = 860;
+    const lowSize = 600;
+    window.addEventListener('resize', function() {
+        if (window.innerWidth <= fullSize) {
+            date1.classList.add('hide-resize')
+            date7.classList.add('hide-resize')
+        } else {
+            date1.classList.remove('hide-resize')
+            date7.classList.remove('hide-resize')
+        }
+        if(window.innerWidth <= medSize) {
+            date2.classList.add('hide-resize')
+            date6.classList.add('hide-resize')
+        } else {
+            date2.classList.remove('hide-resize')
+            date6.classList.remove('hide-resize')
+        }
+        if(window.innerWidth <=lowSize) {
+            date3.classList.add('hide-resize')
+            date5.classList.add('hide-resize')
+        } else {
+            date3.classList.remove('hide-resize')
+            date5.classList.remove('hide-resize')
+        }
+    });
+    
+}
+
+export { setInitialDates, changeDates, fetchData, displayEvents, resizeWindow};
