@@ -1,3 +1,6 @@
+import {fetchAdress} from './fetchAdress.js'
+import {getCookie} from './cookies.js'
+
 const card = (date, title, shortDesc, text) => {
   const card = document.createElement("div");
   card.innerHTML = `
@@ -12,11 +15,14 @@ const card = (date, title, shortDesc, text) => {
           </div>
       </div>
       `;
-  return card; // Return the card element
+  return card;
 };
 
-const generateCards = () => {
-  fetch("./JSON/news.json")
+const generateCards = () =>
+  {
+    fetch(`${fetchAdress}/news/${getCookie("selected-school")}/${getCookie("selected-student")}/`, {
+      credentials: "include",
+    })
     .then((response) => {
       if (!response.ok) {
         throw new Error("News Network Response was not OK");

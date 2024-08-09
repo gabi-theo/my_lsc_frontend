@@ -1,5 +1,6 @@
 import { newError } from "./errorHandling.js";
 import { loginCookies } from "./cookies.js";
+import { fetchAdress } from "./fetchAdress.js";
 
 let userData;
 
@@ -85,7 +86,7 @@ const userLogin = () => {
     // console.log(userLogin);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/auth/login/", {
+      const response = await fetch(`${fetchAdress}/auth/login/`, {
         method: "POST",
         body: JSON.stringify(userLogin),
         headers: {
@@ -100,9 +101,12 @@ const userLogin = () => {
       const userInfo = await response.json();
       console.log(userInfo);
       userData = userInfo;
-      // Assuming insertCookies is defined somewhere
-      insertCookies(userInfo);
-      window.location.href = "./home.html";
+      await insertCookies(userInfo);
+      
+      setTimeout(() => {
+        window.location.href = "./home.html";
+      }, 1000);
+
     } catch (error) {
       console.error("Form submission error:", error);
 
