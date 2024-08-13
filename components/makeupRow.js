@@ -28,7 +28,7 @@ const row = (
             reschedule
           </button>
     `;
-  } else if (status === "made_up") {
+  } else if (status === "made up") {
     statusColor = "bg-secondary";
   }
 
@@ -63,9 +63,7 @@ const row = (
 const newGenerateRow = () => {
   const student = getCookie("selected-student");
 
-  fetch(
-    `${fetchAdress}/student_courses_and_sessions_status/${student}/`
-  )
+  fetch(`${fetchAdress}/student_courses_and_sessions_status/${student}/`)
     .then((response) => {
       if (!response.ok) {
         throw new Error("NewCourses Network response was not OK");
