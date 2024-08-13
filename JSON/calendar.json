@@ -1,0 +1,190 @@
+{
+    "10-07-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "11-07-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "12-07-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "23-07-2024": {
+        "courses": [
+            {
+                "id": "2414d822-5496-4280-8720-54bbe66d05a2",
+                "course_session_id": "17cae778-d770-4c7e-a98a-a3cb90c36f96",
+                "course_session": "idea",
+                "session_passed": false,
+                "date": "2024-04-13",
+                "session_no": 13
+            },
+            {
+                "id": "3b779005-072f-405e-a792-4a2bc14a3a90",
+                "course_session_id": "e692b339-3a96-47db-836b-4a462b6ee116",
+                "course_session": "physical",
+                "session_passed": false,
+                "date": "2024-04-13",
+                "session_no": 13
+            }
+        ],
+        "status": "my_course"
+    },
+    "24-07-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "15-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "16-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "17-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "18-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "19-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "02-08-2024": {
+        "courses": [
+            {
+                "id": "e923d00e-a73e-434f-a5bb-7f56c26b0d51",
+                "course_session_id": "17cae778-d770-4c7e-a98a-a3cb90c36f96",
+                "course_session": "idea",
+                "session_passed": false,
+                "date": "2024-04-20",
+                "session_no": 14
+            },
+            {
+                "id": "2f179b88-df0a-485c-9355-8c9190e81607",
+                "course_session_id": "e692b339-3a96-47db-836b-4a462b6ee116",
+                "course_session": "physical",
+                "session_passed": false,
+                "date": "2024-04-20",
+                "session_no": 14
+            }
+        ],
+        "status": "my_course"
+    },
+    "21-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "22-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "23-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "24-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "25-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "26-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "27-07-2024": {
+        "courses": [
+            {
+                "id": "4201e66b-20b8-4050-b0b2-099876f45da6",
+                "course_session_id": "17cae778-d770-4c7e-a98a-a3cb90c36f96",
+                "course_session": "idea",
+                "session_passed": false,
+                "date": "2024-04-27",
+                "session_no": 15
+            },
+            {
+                "id": "f25a0b8e-49f2-4309-a60d-3dd2831496eb",
+                "course_session_id": "e692b339-3a96-47db-836b-4a462b6ee116",
+                "course_session": "physical",
+                "session_passed": false,
+                "date": "2024-04-27",
+                "session_no": 15
+            }
+        ],
+        "status": "my_course"
+    },
+    "28-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "29-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "30-04-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "01-05-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "02-05-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "03-05-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "04-05-2024": {
+        "courses": [
+            {
+                "id": "81889bbc-77f1-4ab3-9d7b-2cf818214427",
+                "course_session_id": "17cae778-d770-4c7e-a98a-a3cb90c36f96",
+                "course_session": "idea",
+                "session_passed": false,
+                "date": "2024-05-04",
+                "session_no": 16
+            },
+            {
+                "id": "94b398e6-8d56-4d98-85f4-bf1e6609d6ed",
+                "course_session_id": "e692b339-3a96-47db-836b-4a462b6ee116",
+                "course_session": "physical",
+                "session_passed": false,
+                "date": "2024-05-04",
+                "session_no": 16
+            }
+        ],
+        "status": "my_course"
+    },
+    "05-05-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "06-05-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "07-05-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "08-05-2024": {
+        "courses": {},
+        "status": "no_courses"
+    },
+    "09-05-2024": {
+        "courses": {},
+        "status": "no_courses"
+    }
+}

@@ -1,0 +1,119 @@
+[
+    {
+        "id": "11ac534f-a1c0-4499-b333-dbc6c3aeb584",
+        "session": {
+            "id": "573d471d-3531-4c76-8d14-da2e9071d9cf",
+            "course_session": "Frontend",
+            "session_no": 1,
+            "session_trainer": "Elizabeth Bell",
+            "date": "2024-05-24",
+            "time": "16:33:28"
+        },
+        "status": "made_up",
+        "student": "b7b72b0e-6906-46e8-933c-2e8933395502"
+    },
+    {
+        "id": "8b02260a-9a67-4dae-8c09-ccbe98eb16ef",
+        "session": {
+            "id": "818093ee-be73-4e2b-b2d9-e98b4189e9e5",
+            "course_session": "Frontend",
+            "session_no": 2,
+            "session_trainer": "Angel Smith",
+            "date": "2024-04-27",
+            "time": "16:33:28"
+        },
+        "status": "absent",
+        "student": "b7b72b0e-6906-46e8-933c-2e8933395502"
+    },
+    {
+        "id": "b8dc4354-7fb9-47eb-9cc1-a846ba0cd94e",
+        "session": {
+            "id": "b1194fae-61ab-4ded-b1e6-ef0a175ff1ae",
+            "course_session": "Frontend",
+            "session_no": 3,
+            "session_trainer": "Angel Smith",
+            "date": "2024-03-30",
+            "time": "16:33:28"
+        },
+        "status": "absent",
+        "student": "b7b72b0e-6906-46e8-933c-2e8933395502"
+    },
+    {
+        "id": "cf0ee0c5-25a1-401f-87d7-bd1e50622aef",
+        "session": {
+            "id": "f5cffd27-d81c-485e-8d8c-7eecf4ad2909",
+            "course_session": "Frontend",
+            "session_no": 4,
+            "session_trainer": "Barbara Burns",
+            "date": "2024-04-21",
+            "time": "16:33:28"
+        },
+        "status": "present",
+        "student": "b7b72b0e-6906-46e8-933c-2e8933395502"
+    },
+    {
+        "id": "54a1b116-8e1a-4246-a5b3-064283640d55",
+        "session": {
+            "id": "6c9c4478-292e-4247-8f1f-5429c4a61e88",
+            "course_session": "Frontend",
+            "session_no": 5,
+            "session_trainer": "Angel Smith",
+            "date": "2024-04-13",
+            "time": "16:33:28"
+        },
+        "status": "present",
+        "student": "b7b72b0e-6906-46e8-933c-2e8933395502"
+    },
+    {
+        "id": "82d153e0-05f7-439a-81e1-e230bcc2a1b1",
+        "session": {
+            "id": "59684140-4694-48c1-961e-500d5979a08b",
+            "course_session": "Frontend",
+            "session_no": 6,
+            "session_trainer": "Elizabeth Bell",
+            "date": "2024-04-22",
+            "time": "16:33:28"
+        },
+        "status": "present",
+        "student": "b7b72b0e-6906-46e8-933c-2e8933395502"
+    },
+    {
+        "id": "5db9c9b4-ce13-4368-b118-543d3592b277",
+        "session": {
+            "id": "de66293a-f256-4a4b-923f-17ac95933bf3",
+            "course_session": "Frontend",
+            "session_no": 7,
+            "session_trainer": "Gregory Torres",
+            "date": "2024-05-05",
+            "time": "16:33:28"
+        },
+        "status": "absent",
+        "student": "b7b72b0e-6906-46e8-933c-2e8933395502"
+    },
+    {
+        "id": "5db9c9b4-ce13-4368-b118-543d3592b277",
+        "session": {
+            "id": "de66293a-f256-4a4b-923f-17ac95933bf3",
+            "course_session": "Python",
+            "session_no": 4,
+            "session_trainer": "Gregory Torres",
+            "date": "2024-05-05",
+            "time": "16:33:28"
+        },
+        "status": "absent",
+        "student": "b7b72b0e-6906-46e8-933c-2e8933395502"
+    },
+    {
+        "id": "5db9c9b4-ce13-4368-b118-543d3592b277",
+        "session": {
+            "id": "de66293a-f256-4a4b-923f-17ac95933bf3",
+            "course_session": "Python",
+            "session_no": 3,
+            "session_trainer": "Gregory Torres",
+            "date": "2024-04-05",
+            "time": "16:33:28"
+        },
+        "status": "absent",
+        "student": "b7b72b0e-6906-46e8-933c-2e8933395502"
+    }
+]

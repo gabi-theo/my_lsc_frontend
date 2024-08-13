@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makeup</title>
+    <link rel="stylesheet" href="./bootstrap/css/custom.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="makeup.js" type="module"></script>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+
+    <!-- TABLE -->
+    <div class="container mt-5 pt-4">
+      <div class="table-container"></div>
+    </div>
+    <!-- POPUP -->
+    <div
+      class="modal fade"
+      id="reschedule"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="max-width: 80%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Reschedule the session
+            </h1>
+          </div>
+          <div class="modal-body">
+            <h4 class="text-primary mb-3">Session type</h4>
+            <div class="radioContainer d-flex justify-content-center mb-3">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input reschedule-radio"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="onl"
+                  value="onl"
+                />
+                <label class="form-check-label" for="onl"
+                  >Online</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input reschedule-radio"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="sed"
+                  value="sed"
+                />
+                <label class="form-check-label" for="sed"
+                  >School</label
+                >
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input reschedule-radio"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="default"
+                  value="default"
+                  checked
+                  hidden
+                />
+              </div>
+              
+            </div>
+
+            <div class="available-container row">
+              <div class="col-lg">
+                <h5 class="text-info mx-1">Courses</h2>
+                <div class="available-subcontainer border border-info rounded m-1 text-info courses-container p-2"></div>
+              </div>
+            <div class="col-lg">
+              <h5 class="text-secondary mx-1">Make-ups</h2>
+              <div class="available-subcontainer border border-secondary rounded m-1 text-secondary makeups-container  p-2"></div>
+            </div>
+            <div class="col-lg">
+              <h5 class="text-primary mx-1">30 mins</h2>
+              <div class="available-subcontainer border border-primary rounded m-1 text-primary mins-container  p-2"></div>
+            </div>
+
+
+            </div>
+          </div>
+          <button class="btn btn-primary mx-4 text-white mb-3 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">You didn't find a suitable schedule? Click to Schedule manually</button>
+          <div class="collapse reschedule-container" id="collapseExample">
+          <div class="select-manualy-container container my-3 d-md-flex justify-content-between">
+            <div class="select-manualy-subcontainer-room d-flex flex-column justify-content-center mx-2">
+              <h5 class="text-info mx-1">Select a free date</h5>
+              <input type="text" id="datepicker" class="border rounded p-2 my-2" placeholder="Pick a date">
+            </div>
+
+            <div class="select-manualy-subcontainer-trainer d-flex flex-column justify-content-center mx-2">
+              <h5 class="text-info mx-1">Select a free trainer</h5>
+                <select class="form-select my-2" id="teacher-selector">
+                
+                </select>
+            </div>
+
+            <div class="select-manualy-subcontainer-interval  d-flex flex-column justify-content-center mx-2">
+              <h5 class="text-secondary mx-1">Select a free interval</h5>
+                <select class="form-select my-2" id="free-interval-selector">
+                
+                </select>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+          <div class="modal-footer d-flex">
+            <div class="form-check ms-3 me-auto my-3 ">
+              <input class="form-check-input email-notifications" type="checkbox" value="true" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Get Email notifications
+              </label>
+            </div>
+            <button type="button" class="btn btn-light closeButton" data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary text-white save-reschedule"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logiscool Login</title>
+    <link rel="stylesheet" href="./bootstrap/css/custom.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="login.js" type="module"></script>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="container-fluid row main-container bg-primary">
+      <div class="col"></div>
+      <div class="subcontainer col-lg-4 col-md-6 col-sm-8 rounded-4 mb-5 bg-body-tertiary shadow-lg bg-white login-screen">
+        <div class="mb-1">
+          <img
+            class="ms-2"
+            src="./resources/header-logo-desktop.svg"
+            style="width: 6rem "/>
+          <br></br>
+          <h5 class="text-center text-dark fw-bold ">Log in to your account</h5>
+          <label for="exampleFormControlInput1" class="form-label"></label>
+          <input type="text" class="form-control username" placeholder="Username" id="username">
+        </div>
+        <div class="mb-4">
+          <label for="exampleFormControlInput1" class="form-label password"></label>
+          <input type="password" class="form-control password" placeholder="Password" id="password">
+        </div>
+        <div class="btn btn-primary main-container text-white login-button mb-4">Login</div>
+        
+        <p class="btn btn-white main-container fw-bold text-primary mb-3 no-account-button">
+          I don't have an account </p>
+<!--         
+        <a href="/emailverification" class="btn btn-white text-start text-white">
+          Forgot your password? </a>
+          <br></br> -->
+      </div>
+
+      <div class="subcontainer col-lg-4 col-md-6 col-sm-8 rounded-4 mb-5 bg-body-tertiary shadow-lg bg-white register-screen  hidden">
+        <div class="mb-1">
+          <img
+            class="ms-2"
+            src="./resources/header-logo-desktop.svg"
+            style="width: 6rem "/>
+          <br></br>
+          <h5 class="text-center text-dark fw-bold ">Register a new account</h5>
+          <label for="exampleFormControlInput1" class="form-label"></label>
+          <input type="text" class="form-control new-username" placeholder="Username" id="new-username">
+        </div>
+        <div class="">
+          <label for="exampleFormControlInput1" class="form-label new-password"></label>
+          <input type="password" class="form-control new-password" placeholder="Password" id="new-password">
+        </div>
+        <div class="">
+          <label for="exampleFormControlInput1" class="form-label new-password-repeat"></label>
+          <input type="password" class="form-control new-password-repeat" placeholder="Repeat Password" id="new-password-repeat">
+        </div>
+        <div id="password-error-field" class="ms-3"></div>
+        <div class="">
+          <label for="exampleFormControlInput1" class="form-label phone-number"></label>
+          <input type="text" class="form-control phone-number" placeholder="Phone number" id="phone-number">
+        </div>
+        <div class="mb-4">
+          <label for="exampleFormControlInput1" class="form-label mail"></label>
+          <input type="text" class="form-control mail" placeholder="Mail" id="mail">
+        </div>
+        <div class="d-flex mb-4">
+          <div class="btn btn-secondary main-container text-white cancel-register-button mx-2">Cancel</div>
+          <div class="btn btn-primary main-container text-white submit-register-button mx-2">Register</div>
+        </div>
+        
+        
+
+      </div>
+      <div class="col"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+{
+    "onl": {
+        "free": [
+            {
+                "start": "09:00",
+                "end": "23:00",
+                "rooms": [
+                    "wife",
+                    "back",
+                    "join",
+                    "economic",
+                    "detail"
+                ],
+                "trainers": [
+                    [
+                        "c236a618-7743-4e89-bc77-3c111483cab7",
+                        "Linda",
+                        "Evans",
+                        "13:16:44",
+                        "15:30:14"
+                    ],
+                    [
+                        "87ad5574-3be1-46df-a09b-c8c877dea222",
+                        "Alex",
+                        "Suciu",
+                        "09:00:00.248309",
+                        "10:30:00.248309"
+                    ],
+                    [
+                        "dec4decc-3ef1-4613-b421-10ab15cfc64a",
+                        "Thomas",
+                        "Barrett",
+                        "16:00:00.383366",
+                        "20:30:00.383366"
+                    ]
+                ]
+            },
+            "00:30-21:00"
+        ],
+        "busy": [
+            {
+                "bussy-interval": "10:00-10:30",
+                "blocked_by": "make_up",
+                "activity_type": "onl",
+                "room": "wife",
+                "trainer": "Barrett Thomas"
+            },
+            {
+                "bussy-interval": "12:00-12:30",
+                "blocked_by": "make_up",
+                "activity_type": "onl",
+                "room": "join",
+                "trainer": "Barrett Thomas"
+            }
+        ]
+    },
+    "sed": {
+        "free": [
+            {
+                "start": "09:00",
+                "end": "21:00",
+                "rooms": [
+                    "Rife",
+                    "back",
+                    "join",
+                    "economic",
+                    "detail"
+                ],
+                "trainers": [
+                    [
+                        "c236a618-7743-4e89-bc77-3c111483cab7",
+                        "Linda",
+                        "Evans",
+                        "05:16:44",
+                        "05:18:14"
+                    ],
+                    [
+                        "87ad5574-3be1-46df-a09b-c8c877dea222",
+                        "Linda",
+                        "Evans",
+                        "00:00:00.248309",
+                        "00:30:00.248309"
+                    ],
+                    [
+                        "dec4decc-3ef1-4613-b421-10ab15cfc64a",
+                        "Thomas",
+                        "Barrett",
+                        "00:00:00.383366",
+                        "00:30:00.383366"
+                    ]
+                ]
+            },
+            "05:18-21:00"
+        ],
+        "busy": [
+            {
+                "bussy-interval": "05:16-05:18",
+                "blocked_by": "course",
+                "activity_type": "sed",
+                "room": "detail",
+                "trainer": "Evans Linda"
+            }
+        ]
+    }
+}
