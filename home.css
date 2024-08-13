@@ -12,3 +12,26 @@ body{
 .calendar{
     max-width: 60rem
 }
+
+.new-news-container {
+    margin-top: 100px;
+
+}
+
+.date-card{
+    transition: all 0.5s;
+}
+
+.date-card:hover {
+    background-color: #009cde;
+    cursor: pointer;
+    color: white;
+}
+
+.back:hover, .next:hover {
+    cursor:pointer;
+}
+
+.hide-resize {
+    display: none;
+}
